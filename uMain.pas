@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
-  FMX.TabControl;
+  FMX.TabControl, FMX.Effects, FMX.Ani;
 
 type
   TForm1 = class(TForm)
@@ -17,6 +17,9 @@ type
     Image1: TImage;
     filter: TRectangle;
     Shadow_Filter_for_Img: TBrushObject;
+    ShadowEffect1: TShadowEffect;
+    GradientAnimation1: TGradientAnimation;
+    TabItem1: TTabItem;
   private
     { Private declarations }
   public

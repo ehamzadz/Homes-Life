@@ -1,7 +1,6 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
   ClientHeight = 812
   ClientWidth = 375
   FormFactor.Width = 320
@@ -13,17 +12,19 @@ object Form1: TForm1
     Size.Width = 375.000000000000000000
     Size.Height = 812.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 0
-    TabOrder = 1
+    TabIndex = 1
+    TabOrder = 0
     TabPosition = Dots
     Sizes = (
+      375s
+      812s
       375s
       812s)
     object Tab_BG_image: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -9513,7 +9514,36 @@ object Form1: TForm1
         Size.Width = 375.000000000000000000
         Size.Height = 812.000000000000000000
         Size.PlatformDefault = False
+        object filter: TRectangle
+          Align = Contents
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = x001E1E1E
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = x001E1E1E
+              Offset = 0.813664615154266400
+            end
+            item
+              Color = x861E1E1E
+              Offset = 0.950310587882995600
+            end
+            item
+              Color = xB51E1E1E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          HitTest = False
+          Size.Width = 375.000000000000000000
+          Size.Height = 812.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
         object btn_enter: TRectangle
+          Cursor = crHandPoint
           Fill.Kind = Gradient
           Fill.Gradient.Points = <
             item
@@ -9683,39 +9713,62 @@ object Form1: TForm1
                 FileName = 'F:\Projects\Homes Life\assets\arrow_left.png'
               end>
             Align = Center
+            HitTest = False
             Size.Width = 20.000000000000000000
             Size.Height = 20.000000000000000000
             Size.PlatformDefault = False
           end
-        end
-        object filter: TRectangle
-          Align = Contents
-          Fill.Kind = Gradient
-          Fill.Gradient.Points = <
-            item
-              Color = x001E1E1E
-              Offset = 0.000000000000000000
-            end
-            item
-              Color = x001E1E1E
-              Offset = 0.813664615154266400
-            end
-            item
-              Color = x861E1E1E
-              Offset = 0.950310587882995600
-            end
-            item
-              Color = xB51E1E1E
-              Offset = 1.000000000000000000
-            end>
-          Fill.Gradient.StartPosition.X = 0.500000000000000000
-          Fill.Gradient.StopPosition.X = 0.499999970197677600
-          Size.Width = 375.000000000000000000
-          Size.Height = 812.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
+          object ShadowEffect1: TShadowEffect
+            Distance = 1.000000000000000000
+            Direction = 90.000000000000000000
+            Softness = 0.300000011920929000
+            Opacity = 1.000000000000000000
+            ShadowColor = x7F474747
+          end
+          object GradientAnimation1: TGradientAnimation
+            Duration = 0.200000002980232200
+            PropertyName = 'Fill.Gradient'
+            StartValue.Points = <
+              item
+                Color = xFF7D5043
+                Offset = 0.000000000000000000
+              end
+              item
+                Color = xFFDA8E79
+                Offset = 1.000000000000000000
+              end>
+            StartValue.StartPosition.X = 1.000000000000000000
+            StartValue.StartPosition.Y = 0.499999970197677600
+            StartValue.StopPosition.Y = 0.500000059604644800
+            StopValue.Points = <
+              item
+                Color = xFF7D5043
+                Offset = 0.000000000000000000
+              end
+              item
+                Color = xFF7D5043
+                Offset = 1.000000000000000000
+              end>
+            StopValue.StartPosition.X = 1.000000000000000000
+            StopValue.StartPosition.Y = 0.499999970197677600
+            StopValue.StopPosition.Y = 0.500000059604644800
+            Trigger = 'IsMouseOver=true'
+            TriggerInverse = 'IsMouseOver=false'
+          end
         end
       end
+    end
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
     end
   end
   object Gradient_01: TBrushObject

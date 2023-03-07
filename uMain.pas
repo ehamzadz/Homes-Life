@@ -14,6 +14,9 @@ type
     BG_image: TImage;
     btn_enter: TRectangle;
     Gradient_01: TBrushObject;
+    Image1: TImage;
+    filter: TRectangle;
+    Shadow_Filter_for_Img: TBrushObject;
   private
     { Private declarations }
   public

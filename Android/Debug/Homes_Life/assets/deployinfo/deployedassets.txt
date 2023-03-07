@@ -1,0 +1,7 @@
+.\assets\internal\Tajawal-Medium.ttf
+.\assets\internal\Tajawal-Black.ttf
+.\assets\internal\Tajawal-ExtraBold.ttf
+.\assets\internal\Tajawal-Light.ttf
+.\assets\internal\Tajawal-ExtraLight.ttf
+.\assets\internal\BigVesta
+.\assets\internal\Tajawal-Bold.ttf
